@@ -17,10 +17,10 @@ No dependency on Audit Logs sink.
 
 1) Fill `.env` (from `.env.example`).
 
-2) Run once:
+2) Run once (replace with your real local path):
 
 ```powershell
-cd C:\Users\Admin\.openclaw\workspace\firebase-remoteconfig-discord-notifier
+cd <YOUR_LOCAL_PATH>\firebase-remoteconfig-discord-notifier
 .\run.ps1
 ```
 

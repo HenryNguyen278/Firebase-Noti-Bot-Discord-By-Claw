@@ -31,8 +31,17 @@ gcloud auth application-default login
 
 ## 3) Mở project và chuẩn bị `.env`
 
+Nếu chưa có source trên máy mới:
+
 ```powershell
-cd C:\Users\Admin\.openclaw\workspace\firebase-remoteconfig-discord-notifier
+git clone https://github.com/HenryNguyen278/Firebase-Noti-Bot-Discord.git
+cd Firebase-Noti-Bot-Discord
+```
+
+Nếu đã có source sẵn, chỉ cần `cd` vào đúng thư mục local của bạn (không dùng cứng đường dẫn của người khác):
+
+```powershell
+cd <YOUR_LOCAL_PATH>\firebase-remoteconfig-discord-notifier
 ```
 
 Tạo/cập nhật file `.env`:
