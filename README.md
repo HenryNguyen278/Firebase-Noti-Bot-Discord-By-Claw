@@ -8,12 +8,12 @@ Demo video: https://youtu.be/xN7IySsxPiM
 
 ## Architecture (stable mode)
 
-This version uses **Cloud Scheduler polling** (recommended):
+This project runs as an **auto bot** with a fixed schedule:
 
-1. Cloud Scheduler calls an HTTP Cloud Function every minute.
-2. Function fetches latest Remote Config template.
-3. Function compares with previous snapshot in GCS.
-4. If changed, send diff to Discord.
+- Every **60 seconds (1 minute)**, Cloud Scheduler triggers the function.
+- The function fetches Firebase Remote Config data.
+- It compares the latest template with the previous snapshot in GCS.
+- If there is any change, it sends a diff notification to Discord.
 
 No dependency on Audit Logs sink.
 
