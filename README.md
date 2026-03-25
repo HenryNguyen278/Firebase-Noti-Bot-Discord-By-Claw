@@ -4,6 +4,8 @@ Auto-send Discord notifications when Firebase Remote Config changes, including p
 
 > This project was built with OpenClaw Code support, but **you do NOT need to install OpenClaw** (or any OpenClaw tools) to use it.
 
+Demo video: https://youtu.be/xN7IySsxPiM
+
 ## Architecture (stable mode)
 
 This version uses **Cloud Scheduler polling** (recommended):
